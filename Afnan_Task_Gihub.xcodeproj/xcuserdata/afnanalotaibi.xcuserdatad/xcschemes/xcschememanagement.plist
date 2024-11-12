@@ -2,13 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SchemeUserState</key>
-	<dict>
-		<key>Afnan_Task_Gihub.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
+    <key>SchemeUserState</key>
+    <dict>
+        <key>Afnan_Task_Gihub.xcscheme_^#shared#^_</key>
+        <integer>0</integer>
+    </dict>
+    <key>SuppressBuildableAutocreation</key>
+    <dict>
+        <key>C5C669382CE37CCD0063D805</key>
+        <dict>
+            <key>primary</key>
+            <true/>
+        </dict>
+        <key>C5C669512CE37CCF0063D805</key>
+        <dict>
+            <key>primary</key>
+            <true/>
+        </dict>
+        <key>C5C6695B2CE37CCF0063D805</key>
+        <dict>
+            <key>primary</key>
+            <true/>
+        </dict>
+    </dict>
 </dict>
 </plist>

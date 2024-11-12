@@ -11,20 +11,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions
+    ) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-//        
-     //   let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        //            let dependencies = appDelegate.dependencies
         
-        // إعداد النافذة وربطها بـ windowScene
-        window = UIWindow(windowScene: windowScene)
-        let cv = UIViewController()
-        cv.view.backgroundColor = .red
-        cv.title = "Afnan "
-        window?.rootViewController = cv
-        //FlowController(dependencies: dependencies)
-        window!.makeKeyAndVisible()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let dependencies = appDelegate.dependencies
+        
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = FlowController(dependencies: dependencies)
+        self.window = window
+        window.makeKeyAndVisible()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
