@@ -33,7 +33,6 @@ Displays all users who have forked the selected repository. The cell view is des
 
 Clone this repository:
 
-https://github.com/AfnanTheeb/GitHubExplorer.git
 
 
 Install dependencies if required and build the project.
@@ -48,6 +47,13 @@ To ensure the app functions properly, make sure you **open the scheme** and set 
 - **View forked users**: Tap on a repository to see a list of users who have forked it.
 
 ## Screenshots
+
+ 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/55eee415-c0b8-4bd8-9095-2a2977755778" width="22%" style="border-radius: 16px; margin: 0 10px;" />
+  <img src="https://github.com/user-attachments/assets/8520d98e-113a-47ca-bd72-a707b2f73c19" width="22%" style="border-radius: 16px; margin: 0 10px;" />
+  <img src="https://github.com/user-attachments/assets/472721cb-35cf-4d29-bab1-cc18a22ce4aa" width="22%" style="border-radius: 16px; margin: 0 10px;" />
+</p>
 
 
 
