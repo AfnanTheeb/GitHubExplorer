@@ -38,15 +38,10 @@ class RepositoryListViewModel {
     
     @MainActor
     func fetchRepositories() async {
-        guard let request = dependencies.apiService.makeRequest(path: "/users/\(userName)/repos") else {
-            return state = .failure("Invaild request")
-        }
         do {
-            let (data, _) = try await URLSession.shared.data(for: request)
-            let repos = try JSONDecoder().decode([RepositoryModel].self, from: data)
+            let repos = try await dependencies.apiService.fetchData(path: "/users/\(userName)/repos", model: [RepositoryModel].self)
             repositories = repos
             state = repos.isEmpty ? .noData : .success
-            
         } catch {
             state = .failure(error.localizedDescription)
         }

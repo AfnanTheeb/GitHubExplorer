@@ -39,12 +39,8 @@ class ForkedUsersListViewModel: ObservableObject {
     
     @MainActor
     func fetchForkUsers() async {
-        guard let request = dependencies.apiService.makeRequest(path: "/repos/\(userName)/\(repositoryName)/forks") else {
-            return state = .failure("Invaild request")
-        }
         do {
-            let (data, _) = try await URLSession.shared.data(for: request)
-            let forkedUsers = try JSONDecoder().decode([ForkedUserModel].self, from: data)
+            let forkedUsers = try await dependencies.apiService.fetchData(path: "/repos/\(userName)/\(repositoryName)/forks", model: [ForkedUserModel].self)
             
             if forkedUsers.isEmpty {
                 state = .noData
@@ -53,9 +49,10 @@ class ForkedUsersListViewModel: ObservableObject {
                 state = .success
             }
         } catch {
-            state = .failure(error.localizedDescription)
+            state = .failure("Data could not be read: \(error.localizedDescription)")
         }
     }
+    
     // network
     private func observeNetworkStatus(networkService: NetworkService) {
         networkService.$isConnected
