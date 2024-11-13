@@ -34,17 +34,10 @@ class UsersListViewModel: ObservableObject {
     
     @MainActor
     func fetchUsers() async {
-        guard let request = dependencies.apiService.makeRequest(path: "/users") else {
-            return state = .failure("Invaild request")
-        }
-        
         do {
-            let (data, _) = try await URLSession.shared.data(for: request)
-            if let dataString = String(data: data, encoding: .utf8) {
-                print("Raw data:", dataString)
-            }
-            var users = try JSONDecoder().decode([UserModel].self, from: data)
+            var users = try await dependencies.apiService.fetchData(path: "/users", model: [UserModel].self)
             
+            // update data all user by fetchUserDetails
             users = try await withThrowingTaskGroup(of: UserModel.self) { group in
                 for user in users {
                     group.addTask {
@@ -63,14 +56,14 @@ class UsersListViewModel: ObservableObject {
             state = .failure("Data could not be read: \(error.localizedDescription)")
         }
     }
-    
+
     func fetchUserDetails(for username: String) async throws -> UserModel {
-        guard let request = dependencies.apiService.makeRequest(path: "/users/\(username)") else {
-            throw URLError(.badURL)
-        }
-        let (data, _) = try await URLSession.shared.data(for: request)
-        return try JSONDecoder().decode(UserModel.self, from: data)
+        return try await dependencies.apiService.fetchData(
+            path: "/users/\(username)",
+            model: UserModel.self
+        )
     }
+    
     // network
     private func observeNetworkStatus(networkService: NetworkService) {
         networkService.$isConnected

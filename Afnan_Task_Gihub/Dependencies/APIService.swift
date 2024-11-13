@@ -14,8 +14,7 @@ public class APIService {
         return ProcessInfo.processInfo.environment["API_ACCESS_TOKEN"]
     }
     
-    public func makeRequest(path: String) -> URLRequest? {
-        
+    private func makeRequest(path: String) -> URLRequest? {
         guard let url = URL(string: "\(baseURL)\(path)") else {
             print("Error: Invalid URL with path \(path)")
             return nil
@@ -36,5 +35,15 @@ public class APIService {
         print("Request Headers: \(request.allHTTPHeaderFields ?? [:])")
         
         return request
+    }
+    
+    public func fetchData<T: Decodable>(path: String, model: T.Type) async throws -> T {
+        guard let request = makeRequest(path: path) else {
+            throw NSError(domain: "Invalid Request", code: -1, userInfo: nil)
+        }
+        
+        let (data, _) = try await URLSession.shared.data(for: request)
+        let decodedData = try JSONDecoder().decode(model, from: data)
+        return decodedData
     }
 }
