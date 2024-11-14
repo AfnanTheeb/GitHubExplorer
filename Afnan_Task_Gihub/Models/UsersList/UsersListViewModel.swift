@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-enum State {
+enum State: Equatable {
     case loading
     case noData
     case success([UserModel])

@@ -27,11 +27,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Afnan_Task_Gihub.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
-            skipped = "NO"
+            skipped = "YES"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
@@ -49,6 +54,17 @@
                BlueprintIdentifier = "C5C6695B2CE37CCF0063D805"
                BuildableName = "Afnan_Task_GihubUITests.xctest"
                BlueprintName = "Afnan_Task_GihubUITests"
+               ReferencedContainer = "container:Afnan_Task_Gihub.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C5BAAF552CE635F200909EFB"
+               BuildableName = "Afnan_Task_GihubXCTests.xctest"
+               BlueprintName = "Afnan_Task_GihubXCTests"
                ReferencedContainer = "container:Afnan_Task_Gihub.xcodeproj">
             </BuildableReference>
          </TestableReference>
