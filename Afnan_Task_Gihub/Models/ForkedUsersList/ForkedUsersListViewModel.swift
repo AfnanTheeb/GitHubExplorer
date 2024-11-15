@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-enum StateForked {
+enum StateForked: Equatable {
     case loading
     case noData
     case success

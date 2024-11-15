@@ -13,7 +13,6 @@ public class MockAPIService: APIService {
     var mockError: Error?
 
     public func setMockResponse<T: Encodable>(response: T) {
-        // تحويل النموذج إلى بيانات JSON
         do {
             self.mockData = try JSONEncoder().encode(response)
         } catch {

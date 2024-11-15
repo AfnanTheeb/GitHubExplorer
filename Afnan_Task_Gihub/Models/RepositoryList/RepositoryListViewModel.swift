@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-enum StateRepo {
+enum StateRepo: Equatable {
     case loading
     case noData
     case success
