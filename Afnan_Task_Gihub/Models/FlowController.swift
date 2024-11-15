@@ -10,7 +10,7 @@ import UIKit
 
 public class FlowController: UIViewController {
     
-    private let navigation = UINavigationController()
+    internal let navigation = UINavigationController()
     private let dependencies: Dependencies
 
     public init(dependencies: Dependencies) {
@@ -28,14 +28,14 @@ public class FlowController: UIViewController {
         start()
     }
     
-    private func setup() {
+    internal func setup() {
         let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         navigation.navigationBar.titleTextAttributes = textAttributes
         navigation.navigationBar.tintColor = .black
 
     }
 
-    private func start() {
+    internal func start() {
         let usersListViewController = UsersListViewController(
             viewModel: UsersListViewModel(dependencies: dependencies),
             onPressUser: showRepositoryList
@@ -44,7 +44,7 @@ public class FlowController: UIViewController {
         addVC(child: navigation)
     }
     
-    private func showRepositoryList(username: String) {
+    internal func showRepositoryList(username: String) {
         let viewModel = RepositoryListViewModel(
             dependencies: dependencies,
             userName: username
@@ -53,7 +53,7 @@ public class FlowController: UIViewController {
         navigation.pushViewController(repositoryListViewController, animated: true)
     }
     
-    private func showForkedUsers(userName: String, repoName: String) {
+    internal func showForkedUsers(userName: String, repoName: String) {
         let viewModel = ForkedUsersListViewModel(
             dependencies: dependencies,
             userName: userName,

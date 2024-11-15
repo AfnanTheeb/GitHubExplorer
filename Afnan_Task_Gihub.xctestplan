@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "B37659E7-00F8-4030-8463-5170BA2613AB",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "API_ACCESS_TOKEN",
+        "value" : ""
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Afnan_Task_Gihub.xcodeproj",
+      "identifier" : "C5C669382CE37CCD0063D805",
+      "name" : "Afnan_Task_Gihub"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Afnan_Task_Gihub.xcodeproj",
+        "identifier" : "C5BAAF552CE635F200909EFB",
+        "name" : "Afnan_Task_GihubXCTests"
+      }
+    }
+  ],
+  "version" : 1
+}

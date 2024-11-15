@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		C5C669532CE37CCF0063D805 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5C669312CE37CCD0063D805 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5C669382CE37CCD0063D805;
-			remoteInfo = Afnan_Task_Gihub;
-		};
-		C5C6695D2CE37CCF0063D805 /* PBXContainerItemProxy */ = {
+		C5BAAF5A2CE635F300909EFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5C669312CE37CCD0063D805 /* Project object */;
 			proxyType = 1;
@@ -24,9 +17,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5BAAF562CE635F200909EFB /* Afnan_Task_GihubXCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Afnan_Task_GihubXCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5BAAF672CE647CB00909EFB /* Afnan_Task_Gihub.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Afnan_Task_Gihub.xctestplan; sourceTree = "<group>"; };
 		C5C669392CE37CCD0063D805 /* Afnan_Task_Gihub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Afnan_Task_Gihub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5C669522CE37CCF0063D805 /* Afnan_Task_GihubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Afnan_Task_GihubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5C6695C2CE37CCF0063D805 /* Afnan_Task_GihubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Afnan_Task_GihubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -40,6 +33,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		C5BAAF572CE635F300909EFB /* Afnan_Task_GihubXCTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Afnan_Task_GihubXCTests;
+			sourceTree = "<group>";
+		};
 		C5C6693B2CE37CCD0063D805 /* Afnan_Task_Gihub */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -48,34 +46,17 @@
 			path = Afnan_Task_Gihub;
 			sourceTree = "<group>";
 		};
-		C5C669552CE37CCF0063D805 /* Afnan_Task_GihubTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Afnan_Task_GihubTests;
-			sourceTree = "<group>";
-		};
-		C5C6695F2CE37CCF0063D805 /* Afnan_Task_GihubUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Afnan_Task_GihubUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C5BAAF532CE635F200909EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5C669362CE37CCD0063D805 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5C6694F2CE37CCF0063D805 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5C669592CE37CCF0063D805 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,9 +69,9 @@
 		C5C669302CE37CCD0063D805 = {
 			isa = PBXGroup;
 			children = (
+				C5BAAF672CE647CB00909EFB /* Afnan_Task_Gihub.xctestplan */,
 				C5C6693B2CE37CCD0063D805 /* Afnan_Task_Gihub */,
-				C5C669552CE37CCF0063D805 /* Afnan_Task_GihubTests */,
-				C5C6695F2CE37CCF0063D805 /* Afnan_Task_GihubUITests */,
+				C5BAAF572CE635F300909EFB /* Afnan_Task_GihubXCTests */,
 				C5C6693A2CE37CCD0063D805 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,8 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C5C669392CE37CCD0063D805 /* Afnan_Task_Gihub.app */,
-				C5C669522CE37CCF0063D805 /* Afnan_Task_GihubTests.xctest */,
-				C5C6695C2CE37CCF0063D805 /* Afnan_Task_GihubUITests.xctest */,
+				C5BAAF562CE635F200909EFB /* Afnan_Task_GihubXCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +88,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C5BAAF552CE635F200909EFB /* Afnan_Task_GihubXCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5BAAF5E2CE635F300909EFB /* Build configuration list for PBXNativeTarget "Afnan_Task_GihubXCTests" */;
+			buildPhases = (
+				C5BAAF522CE635F200909EFB /* Sources */,
+				C5BAAF532CE635F200909EFB /* Frameworks */,
+				C5BAAF542CE635F200909EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5BAAF5B2CE635F300909EFB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C5BAAF572CE635F300909EFB /* Afnan_Task_GihubXCTests */,
+			);
+			name = Afnan_Task_GihubXCTests;
+			packageProductDependencies = (
+			);
+			productName = Afnan_Task_GihubXCTests;
+			productReference = C5BAAF562CE635F200909EFB /* Afnan_Task_GihubXCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C5C669382CE37CCD0063D805 /* Afnan_Task_Gihub */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5C669652CE37CCF0063D805 /* Build configuration list for PBXNativeTarget "Afnan_Task_Gihub" */;
@@ -130,52 +133,6 @@
 			productReference = C5C669392CE37CCD0063D805 /* Afnan_Task_Gihub.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C5C669512CE37CCF0063D805 /* Afnan_Task_GihubTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5C6696A2CE37CCF0063D805 /* Build configuration list for PBXNativeTarget "Afnan_Task_GihubTests" */;
-			buildPhases = (
-				C5C6694E2CE37CCF0063D805 /* Sources */,
-				C5C6694F2CE37CCF0063D805 /* Frameworks */,
-				C5C669502CE37CCF0063D805 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5C669542CE37CCF0063D805 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C5C669552CE37CCF0063D805 /* Afnan_Task_GihubTests */,
-			);
-			name = Afnan_Task_GihubTests;
-			packageProductDependencies = (
-			);
-			productName = Afnan_Task_GihubTests;
-			productReference = C5C669522CE37CCF0063D805 /* Afnan_Task_GihubTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C5C6695B2CE37CCF0063D805 /* Afnan_Task_GihubUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5C6696D2CE37CCF0063D805 /* Build configuration list for PBXNativeTarget "Afnan_Task_GihubUITests" */;
-			buildPhases = (
-				C5C669582CE37CCF0063D805 /* Sources */,
-				C5C669592CE37CCF0063D805 /* Frameworks */,
-				C5C6695A2CE37CCF0063D805 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5C6695E2CE37CCF0063D805 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C5C6695F2CE37CCF0063D805 /* Afnan_Task_GihubUITests */,
-			);
-			name = Afnan_Task_GihubUITests;
-			packageProductDependencies = (
-			);
-			productName = Afnan_Task_GihubUITests;
-			productReference = C5C6695C2CE37CCF0063D805 /* Afnan_Task_GihubUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,16 +143,12 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					C5BAAF552CE635F200909EFB = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C5C669382CE37CCD0063D805;
+					};
 					C5C669382CE37CCD0063D805 = {
 						CreatedOnToolsVersion = 16.1;
-					};
-					C5C669512CE37CCF0063D805 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = C5C669382CE37CCD0063D805;
-					};
-					C5C6695B2CE37CCF0063D805 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = C5C669382CE37CCD0063D805;
 					};
 				};
 			};
@@ -214,28 +167,20 @@
 			projectRoot = "";
 			targets = (
 				C5C669382CE37CCD0063D805 /* Afnan_Task_Gihub */,
-				C5C669512CE37CCF0063D805 /* Afnan_Task_GihubTests */,
-				C5C6695B2CE37CCF0063D805 /* Afnan_Task_GihubUITests */,
+				C5BAAF552CE635F200909EFB /* Afnan_Task_GihubXCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C5BAAF542CE635F200909EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5C669372CE37CCD0063D805 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5C669502CE37CCF0063D805 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5C6695A2CE37CCF0063D805 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +190,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C5BAAF522CE635F200909EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5C669352CE37CCD0063D805 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5C6694E2CE37CCF0063D805 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5C669582CE37CCF0063D805 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,19 +207,52 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C5C669542CE37CCF0063D805 /* PBXTargetDependency */ = {
+		C5BAAF5B2CE635F300909EFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C5C669382CE37CCD0063D805 /* Afnan_Task_Gihub */;
-			targetProxy = C5C669532CE37CCF0063D805 /* PBXContainerItemProxy */;
-		};
-		C5C6695E2CE37CCF0063D805 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5C669382CE37CCD0063D805 /* Afnan_Task_Gihub */;
-			targetProxy = C5C6695D2CE37CCF0063D805 /* PBXContainerItemProxy */;
+			targetProxy = C5BAAF5A2CE635F300909EFB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C5BAAF5C2CE635F300909EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9DPM92NTA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Afnan-Task-GihubXCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afnan_Task_Gihub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Afnan_Task_Gihub";
+			};
+			name = Debug;
+		};
+		C5BAAF5D2CE635F300909EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9DPM92NTA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Afnan-Task-GihubXCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afnan_Task_Gihub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Afnan_Task_Gihub";
+			};
+			name = Release;
+		};
 		C5C669662CE37CCF0063D805 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -457,81 +428,18 @@
 			};
 			name = Release;
 		};
-		C5C6696B2CE37CCF0063D805 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P9DPM92NTA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Afnan-Task-GihubTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afnan_Task_Gihub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Afnan_Task_Gihub";
-			};
-			name = Debug;
-		};
-		C5C6696C2CE37CCF0063D805 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P9DPM92NTA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Afnan-Task-GihubTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afnan_Task_Gihub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Afnan_Task_Gihub";
-			};
-			name = Release;
-		};
-		C5C6696E2CE37CCF0063D805 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P9DPM92NTA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Afnan-Task-GihubUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Afnan_Task_Gihub;
-			};
-			name = Debug;
-		};
-		C5C6696F2CE37CCF0063D805 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P9DPM92NTA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Afnan-Task-GihubUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Afnan_Task_Gihub;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C5BAAF5E2CE635F300909EFB /* Build configuration list for PBXNativeTarget "Afnan_Task_GihubXCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5BAAF5C2CE635F300909EFB /* Debug */,
+				C5BAAF5D2CE635F300909EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C5C669342CE37CCD0063D805 /* Build configuration list for PBXProject "Afnan_Task_Gihub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -546,24 +454,6 @@
 			buildConfigurations = (
 				C5C669662CE37CCF0063D805 /* Debug */,
 				C5C669672CE37CCF0063D805 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5C6696A2CE37CCF0063D805 /* Build configuration list for PBXNativeTarget "Afnan_Task_GihubTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5C6696B2CE37CCF0063D805 /* Debug */,
-				C5C6696C2CE37CCF0063D805 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5C6696D2CE37CCF0063D805 /* Build configuration list for PBXNativeTarget "Afnan_Task_GihubUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5C6696E2CE37CCF0063D805 /* Debug */,
-				C5C6696F2CE37CCF0063D805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
